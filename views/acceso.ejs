@@ -1,0 +1,20 @@
+<%-include("template/cabecera.ejs", {tituloWeb: 'Pagina de inicio'}) %>
+<div class="container">
+    <div class="abs-center">
+    <div class="p-3 mb-2 bg-dark text-white">
+<form class="border p-3 form" action="./ingresar" id="formulario" name="formulario" method="post">
+    <label for="usuario">Usuario</label>
+    <br>
+    <input  type="text" id="NombreUsuario" name="NombreUsuario">
+    <br>
+    <label for="contrasena">Contraseña</label>
+    <br>
+    <input  type="text" id="ContrasenaUsuario" name="ContrasenaUsuario">
+    <br>
+    <br>
+    <input type="submit" id="enviar" value="Ingresar" class="btn btn-outline-success">
+</form>
+</div>
+</div>
+</div>
+<%-include("template/footer.ejs") %>
